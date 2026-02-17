@@ -1,8 +1,65 @@
 
 public class OOPSBannerApp {
+
+
+public class OOPSBannerApp {
+
     public static void main(String[] args) {
 
-        // Print OOPS to console
-        System.out.println("OOPS");
+        System.out.println("  *****   " + "  *****   " + " *******  " + " ******* ");
+        System.out.println(" *     *  " + " *     *  " + " *     *  " + " *     *");
+        System.out.println("*       * " + "*       * " + "*       * " + "*      ");
+        System.out.println("*       * " + "*       * " + "*******   " + " ****** ");
+        System.out.println("*       * " + "*       * " + "*         " + "       *");
+        System.out.println(" *     *  " + " *     *  " + "*         " + "*      *");
+        System.out.println("  *****   " + "  *****   " + "*         " + " ****** ");
+        System.out.println(String.join(" ",
+                "  *****  ",
+                "  *****  ",
+                " ******* ",
+                " ******* "
+        ));
+
+        System.out.println(String.join(" ",
+                " *     * ",
+                " *     * ",
+                " *     * ",
+                " *     * "
+        ));
+
+        System.out.println(String.join(" ",
+                "*       *",
+                "*       *",
+                "*       *",
+                "*       "
+        ));
+
+        System.out.println(String.join(" ",
+                "*       *",
+                "*       *",
+                "*******  ",
+                " ******  "
+        ));
+
+        System.out.println(String.join(" ",
+                "*       *",
+                "*       *",
+                "*        ",
+                "       * "
+        ));
+
+        System.out.println(String.join(" ",
+                " *     * ",
+                " *     * ",
+                "*        ",
+                "*      * "
+        ));
+
+        System.out.println(String.join(" ",
+                "  *****  ",
+                "  *****  ",
+                "*        ",
+                " ******  "
+        ));
     }
 }
