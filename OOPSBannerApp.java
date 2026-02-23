@@ -1,24 +1,74 @@
 /**
- * OOPSBannerApp
+ * OOPSBannerApp UC4 – OOPS Banner Application (Use Case 4)
  *
- * <p>This application prints "OOPS" as a large
- * ASCII banner using '*' and spaces.</p>
+ * This version improves UC3 by storing banner lines
+ * inside a String array and printing them using a loop,
+ * improving modularity and reducing repetition.
  *
  * @author dishaun
- * @version 2.0
+ * @version 4.0
  */
+
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        // 7 lines height, 9 characters width per letter
+        // Create String array to store banner lines
+        String[] bannerLines = {
 
-        System.out.println("  *****   " + "  *****   " + " *******  " + " ******* ");
-        System.out.println(" *     *  " + " *     *  " + " *     *  " + " *     *");
-        System.out.println("*       * " + "*       * " + "*       * " + "*      ");
-        System.out.println("*       * " + "*       * " + "*******   " + " ****** ");
-        System.out.println("*       * " + "*       * " + "*         " + "       *");
-        System.out.println(" *     *  " + " *     *  " + "*         " + "*      *");
-        System.out.println("  *****   " + "  *****   " + "*         " + " ****** ");
+                String.join(" ",
+                        "  *****  ",
+                        "  *****  ",
+                        " ******* ",
+                        " ******* "
+                ),
+
+                String.join(" ",
+                        " *     * ",
+                        " *     * ",
+                        " *     * ",
+                        " *     * "
+                ),
+
+                String.join(" ",
+                        "*       *",
+                        "*       *",
+                        "*       *",
+                        "*       "
+                ),
+
+                String.join(" ",
+                        "*       *",
+                        "*       *",
+                        "*******  ",
+                        " ******  "
+                ),
+
+                String.join(" ",
+                        "*       *",
+                        "*       *",
+                        "*        ",
+                        "       * "
+                ),
+
+                String.join(" ",
+                        " *     * ",
+                        " *     * ",
+                        "*        ",
+                        "*      * "
+                ),
+
+                String.join(" ",
+                        "  *****  ",
+                        "  *****  ",
+                        "*        ",
+                        " ******  "
+                )
+        };
+
+        // Enhanced for loop to print banner
+        for (String line : bannerLines) {
+            System.out.println(line);
+        }
     }
 }
